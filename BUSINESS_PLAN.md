@@ -1,7 +1,11 @@
-# Wide Receiver Development & Recruiting Business — Business Plan
+# Cruit Lab — Business Plan
 
-> A one-stop shop for WR development and honest recruiting guidance: film
-> evaluation, position technique, football IQ, and realistic college placement.
+> **Cruit Lab** — the honest football lab. A one-stop shop for player
+> development and honest recruiting guidance: film evaluation, position
+> technique, football IQ, and realistic college placement.
+>
+> Brand details (name, tagline, voice, visual direction) live in
+> [`BRAND_IDENTITY.md`](./BRAND_IDENTITY.md).
 
 ---
 
@@ -219,6 +223,8 @@ top of the funnel.
 
 ## 12. Open Decisions
 
-- **Business name** — to be decided (naming exploration is a next step).
+- **Business name** — ✅ decided: **Cruit Lab** (see `BRAND_IDENTITY.md`).
+  Remaining: confirm USPTO trademark clearance, secure domain + handles.
 - **In-person vs. virtual mix** — affects geographic reach and pricing.
-- **Specialization** — WR-focused vs. expanding to other positions later.
+- **Specialization** — WR-focused vs. expanding to other positions later. The
+  "Cruit Lab" name is intentionally position-agnostic, leaving room to expand.
