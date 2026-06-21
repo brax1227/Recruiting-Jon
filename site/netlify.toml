@@ -1,0 +1,14 @@
+# Netlify config — alternative to GitHub Pages.
+# If you deploy this repo on Netlify, set the base/publish to this folder.
+#
+# Easiest path: drag-and-drop the /site folder at https://app.netlify.com/drop
+# Or connect the repo and Netlify will read this file.
+
+[build]
+  publish = "."
+  command = ""   # static site, no build step
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
