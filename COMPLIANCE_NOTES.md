@@ -23,9 +23,10 @@ history.
   - We do **not** claim any activity carries *zero* prospect-rule risk.
   - We do **not** claim any structure is *wholly allowed*.
   - We do **not** claim that **routing services through Brax establishes NCAA
-    clearance.** Brax fronting the client-facing work *reduces* exposure; it
-    does **not** by itself make Jon's involvement permissible. Only Georgia
-    State compliance can establish clearance, in writing.
+    clearance**, nor that it reduces exposure. Whether Brax fronting the
+    client-facing work changes what Jon may do is an **open question for GSU
+    compliance**, not an established fact. Only Georgia State compliance can
+    establish clearance, in writing.
 - **How to read the rest of this document:** treat the structures below as
   *risk-reduction assumptions pending written GSU approval*, paired with the
   open questions in [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md)
@@ -89,20 +90,20 @@ carries less recruiting-rule exposure.
 
 ---
 
-## The operating structure (risk-reduction, pending approval)
+## The operating structure (proposed roles — pending approval)
 
-> ⚠️ This structure is an **assumption to reduce risk while awaiting written GSU
-> approval — not a clearance.** Brax operating the client-facing work does not,
-> on its own, make Jon's participation permissible. Confirm every line against
-> GSU compliance (see [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md)).
+> ⚠️ This is a **proposed division of roles pending written GSU approval — not a
+> clearance, and not an established way to reduce exposure.** Whether it changes
+> what Jon may do is an open question for GSU compliance. Confirm every line
+> against GSU compliance (see [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md)).
 
 - **Brax** owns/operates the business and handles all restricted, client-facing
   work (prospect evaluations, recruiting consults, sales, billing).
 - **Jon** contributes **approved** evergreen products: Student-of-the-Game
   curriculum, NFL/college film breakdowns, drill/technique design — built as
   business assets, not live service delivery to prospects.
-- **Target non-PSAs first** (youth, adults, general football education) to
-  minimize recruiting-rule exposure.
+- **Prioritize non-PSAs** (youth, adults, general football education); confirm
+  with GSU which client types fall outside the prospect-evaluation rules.
 - **No Georgia State name, logo, title, facilities, or staff time** used to
   promote Cruit Lab.
 - **Disclose everything** Jon does and earns to GSU compliance and get written

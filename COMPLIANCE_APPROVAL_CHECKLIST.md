@@ -23,11 +23,14 @@ Jon takes the 10 questions in `COMPLIANCE_NOTES.md` to GSU compliance and gets
 
 **Do not launch anything paid or public involving Jon until Gate A is answered in writing.**
 
-## Gate B — Legal & financial foundation (Brax's lane; not compliance-blocked)
-- [ ] Confirm "Cruit Lab" via USPTO search; secure domain + social handles.
-- [ ] Form LLC + EIN + business bank account.
-- [ ] Payment processor set up (kept **inactive** until Gate A clears for paid work).
-- [ ] Liability waiver + parental-consent / media-release templates ready.
+## Gate B — Optional planning (post-review; do NOT incur costs now)
+> Not required for scaffolding and **not** an instruction to spend money or
+> create accounts now. These are items to *consider* after review, only if/when
+> the user decides to proceed. Free scaffold is the current mode.
+- [ ] (Later) Consider a USPTO name check and whether to secure a domain / handles.
+- [ ] (Later) Consider entity formation (LLC / EIN / bank) if proceeding.
+- [ ] (Later) Consider a payment processor — only if/when paid work is approved.
+- [ ] (Later) Prepare liability waiver + parental-consent / media-release templates.
 
 ## Gate C — Operating guardrails (must be in place before any paid/public work)
 - [ ] Prospect-status screen applied to every client (see workflow doc).
@@ -43,6 +46,11 @@ Jon takes the 10 questions in `COMPLIANCE_NOTES.md` to GSU compliance and gets
 
 ### Current state (as of this draft)
 - Gate A: **not started** (no approval obtained; Claude did not contact compliance).
-- Gate B: user-driven; not tracked here.
+- Gate B: **optional / not started** (free scaffold only; no costs incurred).
 - Gate C: scaffolded in `toolkit/05_PROVISIONAL_SERVICE_AND_WORKFLOW.md`.
 - Gate D: **not started** (free-only, clock not running).
+
+### Infra note (status only — not an action item)
+- GitHub Pages: an API check returned **404**, which does not distinguish
+  "not configured" from "no access" — **cause unresolved.** No settings or
+  deployment change was made. Recorded for later review; not user homework.

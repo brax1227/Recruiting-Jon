@@ -23,9 +23,9 @@
 | Jon's role | Curriculum/technique input on **non-prospect** samples only, pending approval |
 | Turnaround target | 5 business days (post-launch) |
 
-Chosen because it is the lowest-friction entry point and the easiest to run
-inside compliance limits: Brax delivers it, and the prospect-status screen (Step
-2) routes any high-school prospect away from restricted handling.
+Chosen as a low-setup entry point for testing the report format. Whether — and
+how — it can run within compliance limits is an **open question pending GSU
+approval**; until then it is an internal, fictional exercise only.
 
 ---
 
@@ -41,8 +41,10 @@ only.
 
 **Step 2 — Prospect-status screen.** Determine PSA status (generally: started
 9th grade = prospect).
-- **Non-prospect** (pre-9th-grade youth / adult): lower recruiting-rule exposure.
-- **Prospect** (HS athlete): restricted — **Brax only**, and no Jon evaluation.
+- **Non-prospect** (pre-9th-grade youth / adult): generally outside the
+  prospect-evaluation rule — confirm scope with GSU.
+- **Prospect** (HS athlete): treat as restricted — **Brax only**, no Jon
+  evaluation, pending GSU guidance.
 
 **⛔ Step 2.5 — APPROVAL GATE (hard stop).** Do **not** proceed to charge,
 publish, or have Jon perform any prospect-facing work unless **all** are true:
@@ -51,8 +53,8 @@ publish, or have Jon perform any prospect-facing work unless **all** are true:
 - [ ] Consent (and parental consent for minors) is on file, **and**
 - [ ] No Georgia State name/logo/title/resources are used anywhere.
 
-If any box is unchecked → **free sample only, delivered by Brax, no Jon
-prospect-evaluation, no publication.**
+If any box is unchecked → **HARD STOP: no external delivery and no real athlete
+intake.** Internal, fictional examples only until every box is verified true.
 
 **Step 3 — Evaluate.** Fill `02_FILM_EVALUATION_REPORT.md`; use the
 `03_COLLEGE_TIER_RUBRIC.md` for any level read (Brax, for prospects).
