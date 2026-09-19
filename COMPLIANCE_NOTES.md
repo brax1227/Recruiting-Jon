@@ -7,6 +7,32 @@
 
 ---
 
+## Authoritative outcome — RECRUIT-20260919-01 (2026-09-19)
+
+This section is the current authoritative status. Where earlier wording (below or
+in chat) implied more certainty, **this supersedes it**; prior text is kept as
+history.
+
+- **Approval status: NOT obtained.** Jon is a user-reported graduate assistant
+  football coach at Georgia State. No written compliance approval exists yet.
+- **Operating status: scaffolding only, free-only, not launched.** No sales, no
+  outreach, no publications, no real athlete personal data. The "10 paying
+  clients in 90 days" milestone clock has **not** started and does not start
+  until *after* actual written approval.
+- **Claims we do NOT make** (reconciliation of any earlier, stronger wording):
+  - We do **not** claim any activity carries *zero* prospect-rule risk.
+  - We do **not** claim any structure is *wholly allowed*.
+  - We do **not** claim that **routing services through Brax establishes NCAA
+    clearance.** Brax fronting the client-facing work *reduces* exposure; it
+    does **not** by itself make Jon's involvement permissible. Only Georgia
+    State compliance can establish clearance, in writing.
+- **How to read the rest of this document:** treat the structures below as
+  *risk-reduction assumptions pending written GSU approval*, paired with the
+  open questions in [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md)
+  — not as legal conclusions.
+
+---
+
 ## Why this matters
 
 Jon is an active **graduate assistant football coach at Georgia State (NCAA
@@ -63,7 +89,12 @@ carries less recruiting-rule exposure.
 
 ---
 
-## The operating structure (clean, no evasion)
+## The operating structure (risk-reduction, pending approval)
+
+> ⚠️ This structure is an **assumption to reduce risk while awaiting written GSU
+> approval — not a clearance.** Brax operating the client-facing work does not,
+> on its own, make Jon's participation permissible. Confirm every line against
+> GSU compliance (see [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md)).
 
 - **Brax** owns/operates the business and handles all restricted, client-facing
   work (prospect evaluations, recruiting consults, sales, billing).

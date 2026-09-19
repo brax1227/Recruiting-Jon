@@ -7,6 +7,15 @@
 > Brand details (name, tagline, voice, visual direction) live in
 > [`BRAND_IDENTITY.md`](./BRAND_IDENTITY.md).
 
+> ⚠️ **Compliance gate & current status (2026-09-19).** Cruit Lab is in
+> **scaffolding, free-only, pre-launch** status. A co-founder is a user-reported
+> NCAA graduate assistant football coach; **written compliance approval has not
+> been obtained.** The revenue tiers, pricing, and growth milestone below are
+> **provisional and do not activate until after written approval** — the
+> milestone clock has not started. No statement in this plan establishes NCAA
+> clearance. See [`COMPLIANCE_NOTES.md`](./COMPLIANCE_NOTES.md) and
+> [`COMPLIANCE_APPROVAL_CHECKLIST.md`](./COMPLIANCE_APPROVAL_CHECKLIST.md).
+
 ---
 
 ## 1. Executive Summary
