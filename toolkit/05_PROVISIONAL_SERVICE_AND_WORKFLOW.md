@@ -27,6 +27,21 @@ Chosen as a low-setup entry point for testing the report format. Whether — and
 how — it can run within compliance limits is an **open question pending GSU
 approval**; until then it is an internal, fictional exercise only.
 
+### Offer parameters — stated as assumptions (unvalidated)
+
+Plainly labeled assumptions, not validated facts. No market validation has been
+done and no labor has been measured.
+
+- **Price (assumption):** $50–$150 one-time. Not market-tested; free-only during scaffolding.
+- **Turnaround (proposed assumption):** ~5 business days per evaluation. Not yet measured.
+- **Labor estimate (rough assumption):** ~1–3 hours per written evaluation, inferred
+  from the report template's scope — an estimate only, not a timed measurement.
+- **Roles (subject to approval):** Brax client-facing; Jon curriculum/technique on
+  non-prospect material — pending written GSU approval, not settled.
+
+These parameters activate only after real approval and validation; the milestone
+clock has not started.
+
 ---
 
 ## Intake-to-delivery workflow (with approval gate)
@@ -64,29 +79,16 @@ provisional price. Log outcome in the client tracker.
 
 ---
 
-## Hypothetical sample (fictional — NOT a real athlete)
+## Sample — see the canonical example in the Service-Quality Packet
 
-> ⚠️ **Fictional example for template testing only.** "Jordan Sample" is invented.
-> No real player, no real data.
+The single canonical worked sample lives in
+[`06_SERVICE_QUALITY_PACKET.md`](./06_SERVICE_QUALITY_PACKET.md) (fictional
+"Alex Reel"), which keeps **OBSERVED / INFERENCE / UNKNOWN** distinct and cites
+invented clip references. Use it as the one source of truth for sample format.
 
-**Player:** Jordan Sample (fictional) · **Position:** WR · **Class:** Adult rec-league (non-prospect) · **Film:** *[hypothetical link]*
-
-**Overall grade: 6 / 10 (for adult rec level).**
-Reliable hands and clean short-route detail; plays under control. Needs faster
-releases vs. press and more explosive first three steps to separate consistently.
-
-**Strengths**
-1. Secure hands / good concentration on contested catches.
-2. Crisp stems on slants and hitches — sells the route.
-3. High effort as a blocker.
-
-**Areas to develop**
-1. Press release — gets stuck at the line vs. physical corners.
-2. Burst out of breaks — rounds deeper routes.
-3. Coverage recognition — runs the route, doesn't yet read leverage.
-
-**90-day focus:** (1) release package drills, (2) lower-body explosiveness,
-(3) coverage-ID film study.
-
-*Illustrates the report format only. Real evaluations follow the workflow above,
-including the approval gate.*
+> **Retired (2026-09-20):** an earlier embedded sample here ("Jordan Sample,"
+> Overall grade 6/10) is withdrawn. It used unscoped generalizations (reliable
+> hands, contested catches, high effort, an unsupported coverage weakness) and a
+> numeric grade not traceable to observations — contradicting the accepted
+> packet. Do not reintroduce numeric talent grades unless traceable to stated
+> observations, and keep observed/inferred/unknown distinct.

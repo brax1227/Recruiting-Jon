@@ -21,6 +21,13 @@
 ---
 
 ## Overall grade: **__ / 10**
+
+> **Grading discipline:** apply the evidence method in
+> [`06_SERVICE_QUALITY_PACKET.md`](./06_SERVICE_QUALITY_PACKET.md) — keep
+> OBSERVED / INFERENCE / UNKNOWN distinct, and assign a grade only if it is
+> traceable to stated observations (label it illustrative). Do not present a
+> numeric grade as a ranking against real peers.
+
 *One-paragraph honest summary — who this player is right now, not who they could
 become. Lead with the truth.*
 
