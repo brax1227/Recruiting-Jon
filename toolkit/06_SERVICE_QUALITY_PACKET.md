@@ -70,18 +70,21 @@ pointer to evidence, not a claim about real video.
 | Statement | Type | Evidence |
 |---|---|---|
 | Catches away from frame with hands on a low throw | OBSERVED | `[Clip A · 0:12 — INVENTED]` |
-| Reliable hands in a contested/low-ball situation | INFERENCE | from Clip A observation |
+| Hands reliable on this low throw (single rep — not generalized) | INFERENCE | from Clip A observation |
 | Gets stuck ~1 count vs. a press jam before releasing | OBSERVED | `[Clip B · 0:03 — INVENTED]` |
-| Press release needs work vs. physical corners | INFERENCE | from Clip B observation |
+| Slow to release after the press jam on this rep | INFERENCE | from Clip B observation |
 | Rounds the top of a deep dig instead of a sharp break | OBSERVED | `[Clip C · 0:21 — INVENTED]` |
 | Timed/track speed | UNKNOWN | not testable from these clips |
 | Reads leverage pre-snap | UNKNOWN | camera angle doesn't show pre-snap alignment |
 
-**Summary (honest, no promises):** On the invented film, Alex shows secure hands
-(OBSERVED) and route effort, with two clear development areas — press release and
-sharpness out of deep breaks (OBSERVED → INFERENCE). Speed and coverage-reading
-are UNKNOWN and need more film. **90-day focus:** release package, break
-mechanics, coverage-ID study. *No level projection is made without more film and
+**Summary (honest, no promises):** On this invented film, Alex made a clean catch
+on one low throw `[Clip A]` (OBSERVED), and showed two development areas visible
+in these reps — a slow press release `[Clip B]` and a rounded deep break
+`[Clip C]` (OBSERVED → INFERENCE, scoped to these clips). Timed speed and
+coverage-reading are UNKNOWN. **90-day focus:** release package and break
+mechanics (tied to Clips B and C). **Evidence to collect next:** more film to
+assess coverage-reading, and verified measurables for speed — before any further
+diagnosis or projection. *No level projection is made without more film and
 verified measurables.*
 
 *Illustrative rating (optional):* "Route detail: developing" — a qualitative
@@ -143,15 +146,25 @@ Applying Section 5 to the sample claims above:
 | # | Claim | Source | Verdict | Why |
 |---|---|---|---|---|
 | 1 | "Secure hands on a low throw" (cites Clip A) | Good sample | **PASS** | OBSERVED with clip ref |
-| 2 | "Press release needs work" (from Clip B) | Good sample | **PASS** | INFERENCE tied to an observation |
+| 2 | "Slow to release after the press jam on this rep" (Clip B) | Good sample | **PASS** | INFERENCE scoped to a cited observation |
 | 3 | "Timed speed: UNKNOWN" | Good sample | **PASS** | Uncertainty correctly declared |
 | 4 | "Legit D1 receiver" | Poor sample | **FAIL** | Outcome projection, no evidence (Rule 3) |
 | 5 | "Elite 4.4 speed" | Poor sample | **FAIL** | Measurement asserted, unobserved (Rule 5) |
 | 6 | "9/10 talent" | Poor sample | **FAIL** | Numeric rank not traceable to observations (Rule 4) |
 | 7 | "Colleges will be lining up to offer" | Poor sample | **FAIL** | Scholarship promise (guardrail) |
+| 8 | "secure hands" (unscoped) | Good summary (pre-fix) | **FAIL → fixed** | Generalized one rep; now scoped to this catch (consistency) |
+| 9 | "route effort" | Good summary (pre-fix) | **FAIL → fixed** | Not OBSERVED in the table; removed (Rule 1) |
+| 10 | "contested" situation | Good inference/summary (pre-fix) | **FAIL → fixed** | Contested not established on film; removed (Rule 1) |
+| 11 | "coverage-ID study" prescribed | Good summary (pre-fix) | **FAIL → fixed** | Directed training at an UNKNOWN; changed to evidence collection (Rule 2) |
+| 12 | "vs. physical corners" | Good inference (pre-fix) | **FAIL → fixed** | Corner type not established; scoped to the press jam on this rep (Rule 1) |
 
 *This adjudicates prose claims for evidentiary support; it is not an automated
 test suite.*
+
+**Recheck result (post-correction):** the GOOD summary now passes Section 5 —
+every claim is scoped to a cited invented rep, no effort/contested/corner-type
+claims remain, and the only UNKNOWN-directed step is **evidence collection**, not
+a diagnosed weakness.
 
 ---
 
