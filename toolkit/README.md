@@ -8,6 +8,8 @@ The documents Cruit Lab actually delivers and runs on. Use them in order.
 | 02 | [Film Evaluation Report](./02_FILM_EVALUATION_REPORT.md) | The Tier 1 deliverable — honest, film-backed breakdown + 90-day plan |
 | 03 | [College Tier Rubric](./03_COLLEGE_TIER_RUBRIC.md) | The framework for the honest "where can I play?" read |
 | 04 | [Recruiting Profile Worksheet](./04_RECRUITING_PROFILE_WORKSHEET.md) | The Tier 5 deliverable — profile, target list, outreach plan |
+| 05 | [Provisional Service & Workflow](./05_PROVISIONAL_SERVICE_AND_WORKFLOW.md) | Provisional offer + intake-to-delivery workflow with a hard approval gate (scaffold) |
+| 06 | [Service-Quality Packet](./06_SERVICE_QUALITY_PACKET.md) | Internal QA — evidence rubric, worked/poor samples, review checklist, acceptance table (fictional) |
 
 ## How to use them
 1. **Intake (01)** → player fills it out (mirror it in your online form).
