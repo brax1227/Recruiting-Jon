@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cruit Lab — Evaluation DEMO (offline, fictional)</title>
+<!--
+  INTERNAL OFFLINE DEMO. Fictional "Alex Reel" only. No backend, no network,
+  no storage of real personal data, no submission. Everything runs client-side
+  in this single file. Open it directly in a browser (file://) — it works offline.
+  Reuses the Cruit Lab palette; system fonts only (no network font fetch).
+-->
+<style>
+  :root{
+    --bg:#0a0c0a; --surface:#161b16; --line:#232a23; --text:#f4f7f4;
+    --muted:#9aa39a; --accent:#c6f432; --warn:#e0a23f; --unknown:#7fb0c4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;padding:0 0 4rem}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 1rem}
+  /* DEMO banner */
+  .demo-banner{position:sticky;top:0;z-index:10;background:var(--warn);color:#1a1200;
+    font-weight:800;letter-spacing:.04em;text-align:center;padding:.55rem 1rem}
+  h1{font-size:1.4rem;margin:1.2rem 0 .2rem}
+  h2{font-size:1.05rem;margin:1.6rem 0 .5rem;color:var(--accent);
+    text-transform:uppercase;letter-spacing:.06em}
+  .sub{color:var(--muted);font-size:.9rem;margin:.2rem 0 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+    padding:1rem;margin:.6rem 0}
+  label{display:block;font-size:.75rem;color:var(--muted);text-transform:uppercase;
+    letter-spacing:.05em;margin-bottom:.25rem}
+  input,select,textarea{width:100%;background:var(--bg);border:1px solid var(--line);
+    color:var(--text);border-radius:7px;padding:.5rem .55rem;font:inherit}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+  .row{display:grid;grid-template-columns:1fr 150px 210px 34px;gap:.5rem;
+    align-items:center;margin-bottom:.5rem}
+  .row .rm{background:transparent;border:1px solid var(--line);color:var(--muted);
+    border-radius:7px;height:36px;cursor:pointer}
+  .row .rm:hover{border-color:var(--warn);color:var(--warn)}
+  .btn{background:var(--accent);color:#0a0c0a;border:0;border-radius:999px;
+    font-weight:800;padding:.6rem 1.1rem;cursor:pointer;margin:.3rem .4rem .3rem 0}
+  .btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .pill{display:inline-block;font-size:.7rem;font-weight:800;padding:.12rem .5rem;
+    border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+  .p-obs{background:rgba(198,244,50,.15);color:var(--accent)}
+  .p-inf{background:rgba(198,244,50,.08);color:#d9f58a}
+  .p-unk{background:rgba(127,176,196,.16);color:var(--unknown)}
+  /* report */
+  #report .line{margin:.35rem 0;padding-left:.2rem}
+  #report .ref{color:var(--muted);font-size:.85rem}
+  .level-box{border:1px dashed var(--warn);border-radius:8px;padding:.6rem .8rem;
+    color:var(--warn);font-weight:700}
+  .muted{color:var(--muted)}
+  .note{font-size:.85rem;color:var(--muted)}
+  @media (max-width:640px){.grid2{grid-template-columns:1fr}
+    .row{grid-template-columns:1fr 120px;grid-auto-rows:auto}}
+  /* print: show only the report */
+  @media print{
+    .demo-banner,.no-print{display:none !important}
+    body{background:#fff;color:#000}
+    .card{border:1px solid #ccc}
+    #report .ref{color:#555}
+    .level-box{color:#111;border-color:#111}
+  }
+</style>
+</head>
+<body>
+<div class="demo-banner">⚠ DEMO — fictional example only · offline · not a real evaluation · no data leaves this page</div>
+
+<div class="wrap">
+  <h1>Cruit Lab — Evaluation Demo</h1>
+  <p class="sub">Intake → editable evidence worksheet → printable report. Fictional
+  <strong>Alex Reel</strong> only. Runs entirely in your browser — no network, no storage.</p>
+
+  <!-- STAGE 1: INTAKE -->
+  <h2 class="no-print">1 · Synthetic intake</h2>
+  <div class="card no-print">
+    <div class="grid2">
+      <div><label>Player (fictional)</label><input id="in-player" value="Alex Reel"></div>
+      <div><label>Position</label><input id="in-pos" value="WR"></div>
+      <div><label>Level</label><input id="in-level" value="Adult rec-league (non-prospect)"></div>
+      <div><label>Film provided</label><input id="in-film" value="3 clips (A/B/C) — invented"></div>
+      <div><label>Email (placeholder)</label><input id="in-email" value="demo@example.invalid"></div>
+      <div><label>Phone (placeholder)</label><input id="in-phone" value="000-000-0000"></div>
+    </div>
+    <p class="note">Synthetic placeholders — not a real person. Measurables: none provided → treated as UNKNOWN.</p>
+  </div>
+
+  <!-- STAGE 2: WORKSHEET -->
+  <h2 class="no-print">2 · Evidence worksheet <span class="muted" style="text-transform:none;font-size:.8rem">(edit anything — report updates live)</span></h2>
+  <div class="card no-print">
+    <div class="row"><label>Observation</label><label>Type</label><label>Evidence ref (invented)</label><span></span></div>
+    <div id="rows"></div>
+    <button class="btn ghost" id="add">+ Add observation</button>
+    <button class="btn ghost" id="reset">Reset to seed</button>
+    <button class="btn" id="print">Print report</button>
+    <p class="note">Types: OBSERVED (seen on a clip) · INFERENCE (must rest on an observation) ·
+    UNKNOWN (not determinable — stays unknown). No overall skill level is inferred from a few clips.</p>
+  </div>
+
+  <!-- STAGE 3: REPORT -->
+  <h2>3 · Customer-facing report <span class="muted" style="text-transform:none;font-size:.8rem">[DEMO]</span></h2>
+  <div class="card" id="report"></div>
+</div>
+
+<script>
+/* ---- seed: fictional Alex Reel, reused from toolkit/06 (no new observations) ---- */
+const SEED = {
+  intake:{player:"Alex Reel",pos:"WR",level:"Adult rec-league (non-prospect)",
+    film:"3 clips (A/B/C) — invented",email:"demo@example.invalid",phone:"000-000-0000"},
+  rows:[
+    {text:"Catches with hands on a low throw",           type:"OBSERVED",  ref:"[Clip A · 0:12 — INVENTED]"},
+    {text:"Hands reliable on this low throw (single rep)",type:"INFERENCE", ref:"from Clip A"},
+    {text:"Gets stuck ~1 count vs. a press jam",          type:"OBSERVED",  ref:"[Clip B · 0:03 — INVENTED]"},
+    {text:"Slow to release after the press jam on this rep",type:"INFERENCE",ref:"from Clip B"},
+    {text:"Rounds the top of a deep dig",                 type:"OBSERVED",  ref:"[Clip C · 0:21 — INVENTED]"},
+    {text:"Timed speed",                                  type:"UNKNOWN",   ref:"not testable from these clips"},
+    {text:"Reads leverage pre-snap",                      type:"UNKNOWN",   ref:"camera angle doesn't show alignment"}
+  ]
+};
+const TYPES=["OBSERVED","INFERENCE","UNKNOWN"];
+const rowsEl=document.getElementById("rows");
+
+function makeRow(r){
+  const div=document.createElement("div"); div.className="row";
+  const t=document.createElement("input"); t.value=r.text; t.dataset.k="text";
+  const s=document.createElement("select"); s.dataset.k="type";
+  TYPES.forEach(v=>{const o=document.createElement("option");o.value=o.textContent=v;if(v===r.type)o.selected=true;s.appendChild(o);});
+  const e=document.createElement("input"); e.value=r.ref; e.dataset.k="ref";
+  const x=document.createElement("button"); x.className="rm"; x.textContent="×"; x.title="remove";
+  x.onclick=()=>{div.remove();render();};
+  [t,s,e].forEach(el=>el.addEventListener("input",render));
+  div.append(t,s,e,x); return div;
+}
+function readRows(){
+  return [...rowsEl.children].map(div=>{
+    const g=k=>div.querySelector(`[data-k="${k}"]`).value;
+    return {text:g("text"),type:g("type"),ref:g("ref")};
+  });
+}
+function seedIntake(){
+  const m={ "in-player":"player","in-pos":"pos","in-level":"level","in-film":"film","in-email":"email","in-phone":"phone"};
+  for(const id in m) document.getElementById(id).value=SEED.intake[m[id]];
+}
+function loadSeed(){
+  seedIntake();
+  rowsEl.innerHTML="";
+  SEED.rows.forEach(r=>rowsEl.appendChild(makeRow(JSON.parse(JSON.stringify(r)))));
+  render();
+}
+
+function esc(s){return (s||"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+
+function render(){
+  const rows=readRows();
+  const observed=rows.filter(r=>r.type==="OBSERVED"||r.type==="INFERENCE");
+  const unknown=rows.filter(r=>r.type==="UNKNOWN");
+  const player=esc(document.getElementById("in-player").value);
+  const pos=esc(document.getElementById("in-pos").value);
+  const level=esc(document.getElementById("in-level").value);
+  const film=esc(document.getElementById("in-film").value);
+
+  const obsHtml = observed.length
+    ? observed.map(r=>`<div class="line"><span class="pill ${r.type==="OBSERVED"?"p-obs":"p-inf"}">${r.type}</span>
+        ${esc(r.text)} <span class="ref">— ${esc(r.ref)||"(no evidence ref)"}</span></div>`).join("")
+    : `<div class="line muted">No observed/inferred claims yet.</div>`;
+
+  const unkHtml = unknown.length
+    ? unknown.map(r=>`<div class="line"><span class="pill p-unk">UNKNOWN</span>
+        ${esc(r.text)} <span class="ref">— ${esc(r.ref)||"needs more film"}</span></div>`).join("")
+    : `<div class="line muted">Nothing marked unknown.</div>`;
+
+  document.getElementById("report").innerHTML=`
+    <p><strong>${player||"(unnamed)"}</strong> · ${pos} · ${level}<br>
+       <span class="muted">Film reviewed: ${film}</span></p>
+
+    <p><strong>What the film showed</strong> <span class="muted">(scoped to these reps)</span></p>
+    ${obsHtml}
+
+    <p style="margin-top:.9rem"><strong>Not determinable — needs more film</strong></p>
+    ${unkHtml}
+
+    <p style="margin-top:.9rem"><strong>Overall level</strong></p>
+    <div class="level-box">NOT ASSIGNED — a level is not inferred from a few clips or without
+      verified measurables. Collect more film + verified testing before any level read or projection.</div>
+
+    <p style="margin-top:.9rem" class="note">No recruiting, scholarship, or outcome projection is made.</p>
+
+    <p style="margin-top:.9rem"><strong>Service terms (assumptions — unvalidated)</strong></p>
+    <p class="note">Provisional price $50–$150 one-time · proposed turnaround ~5 business days ·
+      delivered by Brax; Jon's role subject to written GSU approval. Not charged; free-only.
+      DEMO only — not an offer.</p>
+  `;
+}
+
+document.getElementById("add").onclick=()=>{rowsEl.appendChild(makeRow({text:"",type:"OBSERVED",ref:""}));render();};
+document.getElementById("reset").onclick=loadSeed;
+document.getElementById("print").onclick=()=>window.print();
+["in-player","in-pos","in-level","in-film"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+
+loadSeed(); // start from the fictional seed
+</script>
+</body>
+</html>

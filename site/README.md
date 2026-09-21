@@ -28,6 +28,13 @@ By default the form opens the visitor's email app with everything pre-filled
 
 (Netlify Forms or any POST endpoint works too — just point `FORM_ENDPOINT` at it.)
 
+## Offline evaluation demo
+`demo/eval-demo.html` is a self-contained, **offline** internal demo (fictional
+Alex only): synthetic intake → editable evidence worksheet → printable report.
+Open it directly in a browser — no server, no network, no data storage. It is not
+linked from the public site and is not for external release. See
+[`../toolkit/07_END_TO_END_DEMO.md`](../toolkit/07_END_TO_END_DEMO.md).
+
 ## Deploy
 Any static host works:
 - **GitHub Pages** — point Pages at this folder (or move these files to the repo

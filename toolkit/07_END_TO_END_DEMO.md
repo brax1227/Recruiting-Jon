@@ -62,8 +62,9 @@ Restated compactly here for flow — **same observations, no additions:**
 
 **Player:** Alex Reel · **Position:** WR · **Film reviewed:** 3 clips (A/B/C) · **Level:** adult rec-league
 
-**Overall:** developing rec-level receiver — *illustrative label from the 3 clips
-reviewed, not a numeric score or a ranking against real peers.*
+**Overall level:** **NOT ASSIGNED** — a level is not inferred from a few clips or
+without verified measurables. (Consistent with the runnable demo at
+[`../site/demo/eval-demo.html`](../site/demo/eval-demo.html).)
 
 **What the film showed (scoped to these reps)**
 - Made a clean catch with his hands on one low throw `[Clip A]`.
