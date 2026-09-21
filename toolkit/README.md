@@ -10,6 +10,7 @@ The documents Cruit Lab actually delivers and runs on. Use them in order.
 | 04 | [Recruiting Profile Worksheet](./04_RECRUITING_PROFILE_WORKSHEET.md) | The Tier 5 deliverable — profile, target list, outreach plan |
 | 05 | [Provisional Service & Workflow](./05_PROVISIONAL_SERVICE_AND_WORKFLOW.md) | Provisional offer + intake-to-delivery workflow with a hard approval gate (scaffold) |
 | 06 | [Service-Quality Packet](./06_SERVICE_QUALITY_PACKET.md) | Internal QA — evidence rubric, worked/poor samples, review checklist, acceptance table (fictional) |
+| 07 | [End-to-End Offline Demo](./07_END_TO_END_DEMO.md) | Internal demo wiring intake → traceable worksheet → deliverable, reusing the canonical example (fictional) |
 
 ## How to use them
 1. **Intake (01)** → player fills it out (mirror it in your online form).
